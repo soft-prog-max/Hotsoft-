@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Persons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header class="header">
+    <h2>Persons Information</h2>
+  </header>
+
+  
+  <div class="container">
+
+    
+    <nav class="sidebar">
+      <ul>
+        <li>🏠 Home</li>
+        <li>🔐 Log In</li>
+        <li>👥 Persons</li>
+        <li>📞 Contact</li>
+        <li>ℹ️ About Us</li>
+        <li>❓ Help Page</li>
+        <li>🚪 Exit Point</li>
+      </ul>
+    </nav>
+
+  
+    <main class="content">
+
+      
+      <div class="form-section">
+        <h3>Please Enter Information</h3>
+
+        <input type="text" id="fname" placeholder="Firstname">
+        <input type="text" id="mname" placeholder="Middlename">
+        <input type="text" id="lname" placeholder="Lastname">
+        <input type="number" id="age" placeholder="Age">
+        <input type="email" id="email" placeholder="Email">
+
+        <button onclick="savePerson()">Save 💾</button>
+      </div>
+
+      
+      <div class="data-section">
+        <h3>Saved Persons Data</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Middle Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  
+  <footer class="footer">
+    <p>Facebook | Instagram | TikTok | Gmail</p>
+    <p>Thank You for Visiting!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
